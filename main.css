@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+label{
+    font-family: 'Roboto', sans-serif;;
+    font-weight: 500;
+    font-size: 16px;
+}
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    margin-left: 30px;
+    display: flex;
+    gap: 200px;
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+}
+.resume{
+
+    margin-left: 30px;
+}
+.spacial {
+    margin-bottom: 50px;
+}
+/*.specialLabel{*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+.hidden {
+    display: none;
+}
+
+.preImg {
+    height: 100px;
+    width: 100px;
+}
+
+.addField {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.addField input {
+    width: 200px;
+}
+
+.addField textarea {
+    width: 200px;
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.bot {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: 10px 15px 15px 0;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1a73e8;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    z-index: 1;
+}
+
+#addFieldsButton {
+    width: 100px;
+}
+
+.btn span {
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: btn_ripples 0.6s linear infinite;
+}
+
+.btn:hover {
+    box-shadow: 0 1px 2px 0 rgb(26 115 232 / 45%), 0 1px 3px 1px rgb(26 115 232 / 30%);
+    background-color: #297be6;
+}
+
+.btn:active {
+    box-shadow: 0 1px 2px 0 rgb(26 115 232 / 45%), 0 2px 6px 2px rgb(26 115 232 / 30%);
+    background-color: #1a73e8 !important;
+}
+
+.btn:focus-visible {
+    box-shadow: 0 0 0 3px lightskyblue;
+}
+
+form {
+    margin: 1em 0;
+}
+
+form .field {
+    margin: 0 0 .8em;
+}
+
+form label {
+    display: block;
+}
+
+form .text {
+    width: 100%;
+    padding: 3px 5px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form .choice label {
+    display: inline;
+}
+
+form .submit {
+    text-align: center;
+}
+
+form .submit input {
+    padding: 5px 10px;
+}
+.line{
+    background: grey;
+    height: 5px;
+    width: 100vw;
+}

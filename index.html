@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume generator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="mainContainer">
+
+    <div class="row">
+        <div class="column">
+
+            <form onsubmit="return false" id="resumeForm">
+                <h1>Форма резюме</h1>
+                <label class="specialLabel" for="photo">Фото:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+                <p id="photoId" class="hidden">Фото:</p>
+                <img class="preImg hidden" id="img" src="" alt=""><br>
+                <div id="divfullname">
+                    <label for="fullName">ФИО:</label>
+                    <input type="text" id="fullName" name="fullName" required><br>
+                </div>
+
+                <div class="divbirthYear">
+                    <label for="birthYear">Год рождения:</label>
+                    <input type="number" id="birthYear" name="birthYear" required><br>
+                </div>
+
+                <label for="email">Почта:</label>
+                <input type="email" id="email" name="email" required><br>
+
+
+                <!--<button class="btn spacial" type="submit" id="submit">Отправить</button>-->
+
+            </form>
+
+
+            <form onsubmit="return false" id="addField" class="addField">
+                <button class="btn spacial2" id="addFieldsButton">
+                    Отправить
+                </button>
+            </form>
+        </div>
+
+
+        <form id="blockField" onsubmit="return false">
+            <h1>
+                Не хватило наших полей?<br>Добавте своё!
+            </h1>
+            <div class="divgroupName">
+                <label for="groupName">Название блока</label>
+                <input placeholder="Название блока" type="text" name="groupName" id="groupName"><br>
+            </div>
+
+            <div class="divfieldCounter">
+                <label for="fieldCounter">Количество полей</label>
+                <input type="number" name="fieldCounter" id="fieldCounter"><br>
+            </div>
+
+
+            <button class="btn" id="addButton">Добавить Блок</button>
+        </form>
+    </div>
+    <br>
+
+    <div class="line"></div>
+
+    <div class="resume">
+        <div class="photo">
+            <p>Фото:</p>
+            <img id="imgR" src="" alt="">
+        </div>
+        <div class="fullName">
+            <p>Полное имя:</p>
+            <span id="fullNameR"></span>
+        </div>
+        <div class="email">
+            <p>Почта:</p>
+            <span id="emailR"></span>
+        </div>
+        <div class="birthYear">
+            <p>Год рождения:</p>
+            <span id="birthYearR"></span>
+        </div>
+    </div>
+    <div class="resume" id="resume">
+
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
